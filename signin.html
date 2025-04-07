@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flipkart Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="./flipkart-icon.svg" type="image/x-icon">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f1f3f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      width: 750px;
+      height: 550px;
+      background-color: white;
+      display: flex;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+
+    .signup-left {
+      width: 40%;
+      background-color: #2874f0;
+      color: white;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    .signup-left h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .signup-left p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #dcdcdc;
+    }
+
+    .signup-right {
+      width: 60%;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .signup-right input {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .signup-right button {
+      padding: 12px;
+      background-color: #fb641b;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .signup-right p {
+      font-size: 12px;
+      color: #878787;
+      margin-top: 10px;
+    }
+
+    .signup-right a {
+      color: #2874f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-right .login-link {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+
+
+    @media (max-width: 600px) {
+      .signup-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+      }
+
+      .signup-left, .signup-right {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+      }
+
+      .signup-left {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .signup-container {
+        width: 90%;
+        height: auto;
+      }
+
+      .signup-left, .signup-right {
+        padding: 30px;
+      }
+
+      .signup-left h1 {
+        font-size: 24px;
+      }
+
+      .signup-left p {
+        font-size: 14px;
+      }
+
+      .signup-right input {
+        font-size: 12px;
+      }
+
+      .signup-right button {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .signup-container {
+        width: 750px;
+        height: 550px;
+      }
+
+      .signup-left, .signup-right {
+        padding: 40px 30px;
+      }
+
+      .signup-left h1 {
+        font-size: 28px;
+      }
+
+      .signup-left p {
+        font-size: 16px;
+      }
+
+      .signup-right input {
+        font-size: 14px;
+      }
+
+      .signup-right button {
+        font-size: 16px;
+      }
+    }
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <div class="signup-left">
+      <h1>Looks like you're new here!</h1>
+      <p>Sign up with your mobile number to get started</p>
+    </div>
+    <div class="signup-right">
+      <input type="text" placeholder="Enter Name" />
+      <input type="text" placeholder="Enter Mobile Number" />
+      <input type="email" placeholder="Enter Email" />
+      <input type="password" placeholder="Create Password" />
+      <button>Sign Up</button>
+      <p>By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+      <div class="login-link">
+        <a href="login.html">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
